@@ -16,7 +16,7 @@ async function generatePDF(personalNumber, rank, fullName, ptor) {
             x: 380,
             y: 490,
             text: "רשאי לגדל זקן באופן קבוע\t\t\t\t   \nמפאת מצבו הרפואי ועל פי המלצת קר\"פ",
-        },
+        }
     ]
 
     const ranks = ['טור', 'רבט', 'סמל', 'סמר'];
@@ -70,8 +70,6 @@ async function generatePDF(personalNumber, rank, fullName, ptor) {
         color: rgb(0, 0, 0),
     })
 
-    console.log(rank);
-
     firstPage.drawText(ptors[ptor].text, {
         x: ptors[ptor].x,
         y: ptors[ptor].y,
@@ -97,7 +95,7 @@ async function generatePDF(personalNumber, rank, fullName, ptor) {
     })
 
     firstPage.drawText(hourOfMetting, {
-        x: 232,
+        x: 228,
         y: 534,
         size: 10,
         font: arialFont,
